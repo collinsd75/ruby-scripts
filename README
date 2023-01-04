@@ -4,3 +4,4 @@ Overall, these are just examples of using Ruby to pull SQL data, format and emai
 
 Config.rb = SQL/Email server config info
 Weekly_New_Projects.rb = HTML email of new projects entered in the past week (requires GP with Project Accounting)
+Daily_New_Projects.rb = HTML email of new projects entered in the past day (requires GP with Project Accounting)
