@@ -1,0 +1,12 @@
+DB_Username = ''
+DB_Password = ''
+DB_Host = ''
+DB_Port = ''
+DB_Database = ''
+EM_Server = ''
+EM_Host = ''
+EM_Fr_Name = ''
+EM_Fr_Add = ''
+EM_Username = ''
+EM_Password = ''
+
