@@ -29,7 +29,7 @@ Subject: New Projects for #{today_formatted}
 MESSAGE_END
 
 #RUN SQL Query and set up message body
-	results = client.execute("SELECT [Customer Number],[Project ID],[Project Name],[Estimator ID],[Project Manager ID], '$' + convert(varchar(12),[User Defined 1],1) AS [User Defined 1] FROM [TTI].[dbo].[PAProjects] WHERE ([Baseline Begin Date] = '#{today_formatted}' AND [Status] = 'Open' AND [Department] = ''#{dept_name}'')")  
+	results = client.execute("SELECT [Customer Number],[Project ID],[Project Name],[Estimator ID],[Project Manager ID], '$' + convert(varchar(12),[User Defined 1],1) AS [User Defined 1] FROM [TTI].[dbo].[PAProjects] WHERE ([Baseline Begin Date] = '#{today_formatted}' AND [Status] = 'Open' AND [Department] = '#{dept_name}')")  
 	array = Array.new
 	results.each do |row|  
 	array.push(row)
